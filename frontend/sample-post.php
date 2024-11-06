@@ -32,7 +32,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <!-- Post preview-->
                      <?php foreach($posts as $post) {?>
                     <div class="post-preview">
-                        <a href="post.html">
+                        <a href="./frontend/sample-post.php?id=<?= $post['id']?>a">
                             <h2 class="post-title"><?= $post['title']?></h2>
                             <?php if (!empty($post['image'])): ?>
 										<img src="<?= '/project' . $post['image'] ?>" 
