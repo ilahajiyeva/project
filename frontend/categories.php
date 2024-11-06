@@ -46,7 +46,7 @@ $pageUrl = $_SERVER['REQUEST_SCHEME']. "://" . $_SERVER['HTTP_HOST'] . $_SERVER[
                     <!-- Post preview-->
                      <?php foreach($posts as $post) {?>
                     <div class="post-preview">
-                        <a href="post.html">
+                        <a href="./frontend/sample-post.php?id=<?= $post['id']?>">
                             <h2 class="post-title"><?= $post['title']?></h2>
                             <?php if (!empty($post['image'])): ?>
 										<img src="<?= '/project' . $post['image'] ?>" 
